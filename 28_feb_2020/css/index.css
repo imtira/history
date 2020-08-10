@@ -1,0 +1,116 @@
+:root {
+  --background: #ddd6e2;
+  --secondary: #cd7cbb;
+  --selections: #b294bb;
+  /* Prompt */
+  --prompt-titlebar: #1c1e26;
+  --prompt-titlebar-text: #adBaBa;
+  --prompt-background: var(--prompt-titlebar);
+  --prompt-text: #f7b566;
+}
+
+body {
+  background-color: var(--background);
+}
+
+::selection {
+  background: var(--selections);
+}
+
+h1 {
+  font-family: 'Zilla Slab';
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Zilla Slab';
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: 'Zilla Slab';
+  font-size: 1rem;
+}
+
+/* "Navbar" */
+
+.navbar {
+  padding: 1em 1em;
+}
+
+.navbar-section img {
+  width: 1.7rem;
+  padding-left: 0.5rem;
+}
+
+.navbar-section img:hover {
+  filter: grayscale(75%);
+}
+
+/* Prompt */
+
+.prompt {
+  padding-top: 1rem;
+  font-family: 'Ubuntu Mono';
+}
+
+.prompt-content {
+  background-color: var(--prompt-background);
+  padding: 0.5rem 1rem;
+  height: 25rem;
+}
+
+.prompt-content a {
+  text-decoration: underline;
+}
+
+.prompt-title {
+  background-color: var(--prompt-titlebar);
+  height: 1rem;
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0px 0px;
+  padding-top: 0.1rem;
+  font-weight: bold;
+  color: var(--prompt-titlebar-text);
+  text-align: center;
+}
+
+.prompt-content span {
+  color: var(--secondary);
+}
+
+.prompt-content span .write-out {
+  color: var(--prompt-text);
+}
+
+.ls-output {
+  white-space: pre-line;
+}
+
+.buttons {
+  padding-top: 0.2rem;
+  padding-right: 0.7rem;
+  float: right;
+}
+
+@keyframes blinking {
+  50% {
+    opacity: 5%;
+  }
+}
+
+.blink {
+  animation: blinking 1s linear infinite;
+}
+
+/* About */
+
+.cyrillic-notice {
+  color: var(--secondary);
+}

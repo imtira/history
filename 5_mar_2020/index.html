@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Zilla+Slab:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <script src="js/index.js" async></script>
+  <script src="js/svgMap.min.js" async></script>
+
+  <title>tira. on the internet.</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="navbar">
+      <section class="navbar-center"></section>
+      <section class="navbar-section">
+        <a href="https://github.com/t1ra"><img src="img/navbar/github.svg"></a>
+        <a href="https://en.wikipedia.org/wiki/User:Tiraboschi"><img src="img/navbar/wikipedia.svg"></a>
+        <a href="https://steamcommunity.com/id/__tira"><img src="img/navbar/steam.svg"></a>
+        <a href="https://www.youtube.com/channel/UCixNjsSy1ztqfNXb6JdSPhA"><img src="img/navbar/youtube.svg"></a>
+      </section>
+    </header>
+
+    <div class="columns">
+      <!-- x, I'm tira -->
+      <div class="col-1"></div>
+      <h1 class="col-10">
+        <span class="hey">Hej</span>, I'm tira.
+      </h1>
+      <div class="col-1"></div>
+
+      <!-- Terminal -->
+      <div class="col-1"></div>
+      <div class="prompt col-10">
+        <div class="prompt-title">
+          tira@nezabudka: /mnt/code
+          <span class="buttons">
+            <!-- https://github.com/numixproject/numix-icon-theme -->
+            <!-- Minimise -->
+            <img src="img/min.png">
+            <!-- Maximise -->
+            <img src="img/max.png">  
+            <!-- Close -->
+            <span class="tooltip" data-tooltip=":("><img src="img/close.png"></span>
+          </span></div>
+        <div class="prompt-content">
+          <!-- This is not a healthy use of &nbsp; -->
+          <span>[code] <span class="write-out">ls projects --description --lang</span></span>
+          <div class="ls-output"># Desktop applications
+            <a href="https://github.com/t1ra/xworks">xworks</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A dead-simple FAQ-style static site generator (Rust)
+            <a href="https://github.com/t1ra/hypixel">hypixel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Hypixel API wrapper (Go)
+            <a href="https://github.com/t1ra/crystalize">crystalize</a>&nbsp;&nbsp;A Spotify API wrapper (Crystal)
+            <a href="https://github.com/t1ra/collude">collude</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A scientific calculator (Rust)
+            <a href="https://github.com/t1ra/ppaman">ppaman</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Personal Package Archive manager (Shell)
+            <a href="https://github.com/t1ra/renminbi">renminbi</a>&nbsp;&nbsp;&nbsp;&nbsp;A Minecraft chat-logging mod (Java)
+            # Web applications
+            <a href="/">t1ra.github.io</a>&nbsp;&nbsp;...
+            <a href="/renminbi-view">renminbi-view</a>&nbsp;&nbsp;&nbsp;A Renminbi log visualiser
+          </div>
+          <span class="end">[code] <span class="blink">▊</span></span>
+        </div>
+      </div>
+      <div class="col-1"></div>
+
+      <!-- A whole lot of words. -->
+      <div class="col-1"></div>
+      <div class="col-10">
+        <h2>About</h2>
+        <p>I'm an Anglo-Australian
+          <a href="https://en.wikipedia.org/wiki/Computer_programming">programmer</a>, language
+          aficionado (jeg snakker litt norsk
+          <span class="cyrillic-notice tooltip" data-tooltip="Zilla Slab doesn't support Cyrillic just yet!">
+          i russkiy</span>) and occasional writer. I have quite an affinity for
+          <a href="https://en.wikipedia.org/wiki/Mozilla">Mozilla</a>.
+          I write <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust</a>,
+          often license under <a href="https://www.mozilla.org/en-US/MPL/2.0/">MPLv2.0</a>, and use
+          <a href="https://en.wikipedia.org/wiki/Firefox">Firefox</a>. (They comissioned
+          <a href="https://en.wikipedia.org/wiki/Zilla_Slab">the font you're seeing right now</a>,
+          too.)<br>
+          I exclusively use <a href="https://en.wikipedia.org/wiki/Ubuntu">Ubuntu</a> and
+          <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code">Visual Studio Code</a> for
+          programming.
+        </p>
+        <h2>Programming</h2>
+        <p>Right now, I spend most of my time working with
+          <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a> and
+          Rust, but I do
+          venture into other languages if need be; I rarely touch web development because CSS and JS
+          are a pain, as much as it does reel me in.
+        </p>
+      </div>
+      <div class="col-1"></div>
+
+      <div class="col-1"></div>
+      <div class="col-10">
+        <!-- Probably could be better. -->
+        <h2>Language Learning</h2>
+        <div class="lang-map">
+          <div class="prompt-title">
+            tira@nezabudka: ~/langs
+            <span class="buttons">
+              <!-- Minimise -->
+              <img src="img/min.png">
+              <!-- Maximise -->
+              <img src="img/max.png">  
+              <!-- Close -->
+              <span class="tooltip" data-tooltip=":("><img src="img/close.png"></span>
+            </span></div>
+          <div class="prompt-content">
+            <iframe aria-label="World choropleth map" id="datawrapper-chart-EpWxd" src="//datawrapper.dwcdn.net/EpWxd/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+
+      <!-- -->
+    </div>
+  </div>
+
+</body>
+</html>

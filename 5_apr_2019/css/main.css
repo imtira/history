@@ -1,0 +1,151 @@
+/* Styles used across the page */
+html * {
+  font-family: 'IBM Plex Sans', sans-serif;
+  scroll-behavior: smooth; }
+
+.fadein {
+  -webkit-animation: fadein 1s;
+    -webkit-animation--moz-animation: fadein 1s;
+      -webkit-animation--moz-animation--ms-animation: fadein 1s;
+        -webkit-animation--moz-animation--ms-animation--o-animation: fadein 1s;
+          -webkit-animation--moz-animation--ms-animation--o-animation-animation: fadein 1s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+body {
+  top: 0;
+  left: 0; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+::selection {
+  background-color: orange;
+  color: red; }
+
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -ms-user-select: none;
+  /* Yay for MS implementing things */
+  user-select: none; }
+
+.page {
+  height: 100vh; }
+
+a:visited,
+a {
+  outline: none;
+  -moz-outline-style: none;
+  text-decoration: none;
+  color: #795548; }
+
+.centered {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.rounded {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+textarea {
+  resize: none;
+  border-width: 2px;
+  font-family: inherit;
+  font-size: inherit;
+  color: #DADADA; }
+
+/* First page */
+.page-one {
+  background-color: #FF9671; }
+  .page-one .content,
+  .page-one .content a {
+    font-size: 4vmin;
+    padding-top: 5vh; }
+  .page-one .title {
+    float: left;
+    width: 85vw;
+    margin: 0 0;
+    font-size: 5vmin;
+    color: #22313F;
+    letter-spacing: 0.03vw; }
+
+.tools.right a {
+  display: block;
+  font-size: 3vmin; }
+
+/* Second page */
+.page-two {
+  background-color: #3D3E8F; }
+  .page-two textarea {
+    border-color: #D8D8D8;
+    background-color: #3D3E8F;
+    transform: translateY(5vh);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45vh;
+    width: 90vw;
+    margin-bottom: 1vh; }
+
+/* Third page */
+.page-three {
+  background-color: #FF4143; }
+  .page-three .controls button {
+    transform: translateY(45vh);
+    background-color: #181514;
+    border: none;
+    color: #DADADA;
+    width: 15vw;
+    height: 5vh; }
+  .page-three .image-container {
+    margin-right: 1vw;
+    float: right;
+    width: 80vw;
+    height: 90vh; }
+  .page-three .image {
+    border-width: 0;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border: none; }
+  .page-three .previousImages {
+    background-color: #FF4143;
+    width: 98vw;
+    height: 4vh;
+    color: #DADADA;
+    border: none; }

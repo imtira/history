@@ -1,0 +1,97 @@
+html
+    scrollbar-color: #e56b6f #00000000
+    scrollbar-width: thin !important
+
+body
+    font-family: 'Major Mono Display', monospace
+    min-height: 100%
+    background-color: #f7e7ce
+
+h1
+    font-size: 4em
+    margin-bottom: 0.2em
+
+aside
+    display: block
+    margin-left: 3vw
+
+aside:before
+    content: '$ '
+
+h3
+    font-size: 1.2em
+
+.blink
+    animation: blink 1.2s linear infinite
+
+@keyframes blink
+    50%
+        opacity: 0
+
+.container
+    margin-left: 3vw
+    margin-right: 3vw
+    min-height: 90vh
+
+li
+    list-style-type: none
+    padding-bottom: 5px
+
+li:before
+    font-family: 'Major Mono Display', monospace
+    content: '%'
+    letter-spacing: -3px
+    margin-left: -20px
+    margin-right: 10px
+
+li:after
+    font-family: 'Major Mono Display', monospace
+
+li quote, li:not(.item) a
+    font-style: italic
+
+li:not(.item) a:before
+    content: '„'
+
+li:not(.item) a:after
+    content: '“'
+
+.description
+    //font-family: 'Lucida Console', monospace
+
+.description li:before
+    content: '{'
+
+.description li:after
+    margin-left: 6px
+    content: '}'
+
+quote
+    font-family: 'Major Mono Display', monospace
+
+quote:before
+    content: '„'
+
+quote:after
+    content: '“'
+
+a
+    text-decoration: none
+    font-family: 'Major Mono Display', monospace
+    color: #e56b6f
+
+footer
+    color: #293241
+    bottom: 0
+    width: 100%
+    text-align: center
+    font-size: 0.8em
+    display: block
+
+@media (prefers-color-scheme: dark)
+    html, body
+        background-color: #2b2d42
+        color: #c6def1
+    
+    footer
+        color: #c6def1

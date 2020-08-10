@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <title>Jeg Heter Tira</title>
+</head>
+<body>
+  <!-- TODO: Sticky header to go back to the first page -->
+  <div class="page page-one">
+    <span class="title fadein">
+      <h1 class="right">Velkommen!</h1>
+      <h2 class="right">Jeg heter tira.</h2>
+      <span class="tools right">
+        <a href="#tri">String to Regional Indicators</a>
+        <a href="#roulette">Imgur Roulette</a>
+      </span>
+    </span>
+  </div>
+  <div class="page page-two" id="tri">
+    <!-- TODO: Make this look nicer -->
+    <textarea autocomplete="off" class="input rounded" onkeyup="TextToRegionalIndicators()"></textarea>
+    <textarea autocomplete="off" class="output rounded" readonly></textarea>
+  </div>
+  <div class="page page-three" id="roulette">
+    <div class="controls">
+      <button onclick="NewImage()" class="button rounded">New Image</button>
+    </div>
+    <div class="image-container">
+      <img class="image"></img>
+    </div>
+    <textarea readonly autocomplete="off" class="previousImages rounded"></textarea>
+  </div>
+</body>
+</html>
