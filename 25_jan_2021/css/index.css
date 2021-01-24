@@ -1,0 +1,39 @@
+body {
+    background-color: #ebebeb;
+    color: #16181c;
+    font-family: sans-serif;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: serif;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+
+ul li {
+    margin-top: 2px;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    justify-content: flex-start;
+    margin-right: 5%;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    justify-content: flex-start;
+}
