@@ -1,0 +1,9 @@
+<div id=code></div>
+<script>
+var input = prompt("Text to list-o-matic-a-mise:", "tiraboschi is the best");
+input = input.replace(/,/g , "");
+input = input.replace(/ /g, "\", \"");
+input = "var valuename = [\"" + input + "\"];";
+input = input.replace(/, "", /g , ", ");
+document.getElementById("code").innerHTML = input;
+</script>

@@ -1,0 +1,37 @@
+<title>GAiGA Data-mining test</title>
+<pre><div id="userAgent"></div>
+<div id="platform"></div>
+<div id="width"></div>
+<div id="height"></div>
+<div id="javaAllowed"></div>
+<div id="referrer"></div>
+<div id="history"></div>
+<div id="latitude"></div>
+<div id="longitude"></div>
+<div id="accuracy"></div>
+<div id="altitude"></div>
+<div id="altitudeAccuracy"></div>
+<div id="heading"></div>
+<div id="speed"></div>
+<div id="timestamp"></div>
+<button id="goBack" onclick="previousPage()">Click to go to a previous page</button>
+</pre>
+<script>
+var str = document.location.href;
+var url = window.location.href;
+var Platform = navigator.platform;document.getElementById("platform").innerHTML = "Platform:    " + Platform;
+var UserAgent = navigator.userAgent;document.getElementById("userAgent").innerHTML = "User Agent:    " + UserAgent;
+var Width = window.screen.width;document.getElementById("width").innerHTML = "Screen Width:  " + Width;
+var Height = window.screen.height;document.getElementById("height").innerHTML = "Screen Height: " + Height;
+var Java = navigator.javaEnabled();document.getElementById("javaAllowed").innerHTML = "Java Allowed: " + Java;
+var Referrer = document.referrer;if(Referrer == ""){Referrer = "Unknown (direct?)"}document.getElementById("referrer").innerHTML = "Referrer: " + Referrer;
+function previousPage(){(window.history.go(-3))}
+try{var Latitude = position.coords.latitude;document.getElementById("latitude").innerHTML = "Latitude: " + Latitude;
+var Longitude = position.coords.longitude;document.getElementById("longitude").innerHTML = "Longitude: " + Longitude;
+var Accuracy = position.coords.accuracy;document.getElementById("accuracy").innerHTML = "Accuracy: " + Accuracy;
+var Altitude = position.coords.altitude;document.getElementById("longitude").innerHTML = "Longitude: " + Longitude;
+var AltitudeAccuracy = position.coords.altitudeAccuracy;document.getElementById("altitudeAccuracy").innerHTML = "Altitude Accuracy: " + AltitudeAccuracy;
+var Heading = position.coords.heading;document.getElementById("heading").innerHTML = "Heading: " + Heading;
+var Speed = position.coords.speed;document.getElementById("speed").innerHTML = "Speed: " + Speed;
+var Timestamp = position.timestamp;document.getElementById("timestamp").innerHTML = "Timestamp : " + timestamp;}catch(e){} // Most only work on mobile
+</script>
